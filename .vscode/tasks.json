@@ -1,0 +1,73 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "clang-Mp4Muxer",
+            "command": "/usr/bin/clang",
+            "args": [
+                "-fcolor-diagnostics",
+                "-fansi-escape-codes",
+                "-g",
+                
+                "${workspaceFolder}/*.c",
+                "${workspaceFolder}/util/*.c",
+                "${workspaceFolder}/h264/*.c",
+                "${workspaceFolder}/aac/*.c",
+                "${workspaceFolder}/mp4/*.c",
+
+                "-I${workspaceFolder}/util/",
+                "-I${workspaceFolder}/h264/",
+                "-I${workspaceFolder}/aac/",
+                "-I${workspaceFolder}/mp4/",
+
+                "-o",
+                "${workspaceFolder}/Mp4Muxer"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "gcc-Mp4Muxer",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-g",
+                
+                "${workspaceFolder}/*.c",
+                "${workspaceFolder}/util/*.c",
+                "${workspaceFolder}/h264/*.c",
+                "${workspaceFolder}/aac/*.c",
+                "${workspaceFolder}/mp4/*.c",
+
+                "-I${workspaceFolder}/util/",
+                "-I${workspaceFolder}/h264/",
+                "-I${workspaceFolder}/aac/",
+                "-I${workspaceFolder}/mp4/",
+
+                "-o",
+                "${workspaceFolder}/Mp4Muxer"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ],
+    "version": "2.0.0"
+}

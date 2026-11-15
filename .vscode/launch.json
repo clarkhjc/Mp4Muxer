@@ -1,0 +1,26 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "clang-Mp4Muxer",
+            "program": "Mp4Muxer",
+            "args": ["input.cfg"],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "clang-Mp4Muxer"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "gcc-Mp4Muxer",
+            "program": "Mp4Muxer",
+            "args": ["input.cfg"],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "gcc-Mp4Muxer"
+        }
+    ]
+}
